@@ -1,0 +1,297 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,intial-scale=1.0">
+<title>Ulivo-Menu</title>
+
+<style>
+	body{
+		background-image: url(images/banner.jpeg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment:fixed;
+		margin: 0;
+		font-family: Arial, sans-serif;
+		color: white;
+	}
+	header,main{
+		background-color: rgba(0, 0, 0, 0.75);
+		padding: 25px;
+		margin: 30px auto;
+		max-width: 800px;
+		text-align: center;
+		border-radius: 8px;	
+	}
+	a{
+		color: #ffd700;
+		text-decoration: none;
+		margin: 0 10px;
+		transition: color 0.3s ease;	
+	}
+	a:hover{ 
+		text-decoration: underline;
+		color: #ffffff;
+	}
+	.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu-table th, .menu-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ffd700;
+}
+
+.menu-table th {
+    background-color: #ffd700;
+    color: #000;
+}
+
+.menu-table a {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+.ingredient-info {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #ffd700;
+}
+	.active{
+		font-weight: bold;
+		border-bottom: 2px solid #ffd700;	
+	}
+	.menu-category h3{
+		color: #ffd700;
+		border-bottom: 1px solid #ffd700;
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+		font-size: 1.4rem;	
+	}
+	.menu-item{
+		display: flex;
+		justify-content: space-between;
+		font-size: 18px;
+		margin-top: 10px;	
+	}
+	.item-name{
+		color: #ffffff;
+	}
+	.item-price{
+		color: #ffd700;
+	}
+	.item-desc{
+		font-size: 14px;
+		color: #ccc;
+		margin-top: 3px;
+		margin-bottom: 15px;
+		line-height: 1.4;
+	}
+	footer{
+		text-align: center;
+		padding: 15px;
+		background-color: rgba(0, 0, 0, 0.85);
+		font-size: 14px;
+		margin-top: 30px;	
+	}
+	header, main{
+		width: 90%;
+		padding: 15px;
+		margin: 15px auto;	
+	}
+	nav a{
+		display: inline-block;
+		margin: 5px;	
+	}
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		<h1>Ulivo Restaurant</h1>
+		<nav>
+			<a href="index.html">Home</a> |
+			<a href="about.html">About Us</a> |
+			<a href="menu.html" class="active">Menu</a> |
+			<a href="contact.html">Contact Us</a> 
+		</nav>
+	</header>
+	<main>
+	<h2>Our Special Menu</h2>
+		<p>Explore our delicious authentic Italian dishes below.</p>
+
+    <table border="1" class="menu-table">
+        <thead>
+            <tr>
+                <th>Item Code</th>
+                <th>Dish Name</th>
+                <th>Description</th>
+                <th>Price (LKR)</th>
+                <th>More Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ITM-001</td>
+                <td>Margherita Pizza</td>
+                <td>Classic tomato sauce, fresh mozzarella, and basil.</td>
+                <td>2,500</td>
+                <td><a href="#margherita-info">View Ingredients</a></td>
+            </tr>
+            <tr>
+                <td>ITM-002</td>
+                <td>Spaghetti Carbonara</td>
+                <td>Traditional pasta with rich creamy sauce and bacon.</td>
+                <td>1,800</td>
+                <td><a href="#carbonara-info">View Ingredients</a></td>
+            </tr>
+            <tr>
+                <td>ITM-003</td>
+                <td>Lasagna Bolognese</td>
+                <td>Layered pasta with beef ragu and béchamel sauce.</td>
+                <td>2,800</td>
+                <td><a href="#lasagna-info">View Ingredients</a></td>
+            </tr>
+            <tr>
+                <td>ITM-004</td>
+                <td>Tiramisu</td>
+                <td>Classic Italian coffee-flavoured dessert.</td>
+                <td>1,000</td>
+                <td><a href="#tiramisu-info">View Ingredients</a></td>
+            </tr>
+			<tr>
+				<td>ITM-005</td>
+				<td>Garlic Bread with Cheese</td>
+				<td>Classic Italian Cheese</td>
+				<td>950</td>
+				<td><a href="#Garlic Bread with Cheese">View Ingredients</a></td>
+			</tr>
+			<tr>
+				<td>ITM-006</td>
+				<td>Ulivo Wine</td>
+				<td>Italian Grapes</td>
+				<td>8,900</td>
+				<td><a href="#Ulivo Wine">View Ingredients</a></td>
+			</tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <div id="margherita-info" class="ingredient-info">
+        <h3>Margherita Pizza - Ingredients</h3>
+        <p>Fresh Mozzarella, San Marzano Tomato Sauce, Basil Leaves, Olive Oil, Hand-tossed Dough.</p>
+    </div>
+
+    <div id="carbonara-info" class="ingredient-info">
+        <h3>Spaghetti Carbonara - Ingredients</h3>
+        <p>Spaghetti, Egg Yolks, Pecorino Romano Cheese, Pancetta, Freshly Ground Black Pepper.</p>
+    </div>
+
+    <div id="lasagna-info" class="ingredient-info">
+        <h3>Lasagna Bolognese - Ingredients</h3>
+        <p>Pasta sheets, Minced Beef, Tomato Puree, Béchamel Sauce, Parmesan Cheese.</p>
+    </div>
+
+    <div id="tiramisu-info" class="ingredient-info">
+        <h3>Tiramisu - Ingredients</h3>
+        <p>Ladyfingers, Espresso Coffee, Mascarpone Cheese, Cocoa Powder, Sugar, Eggs.</p>
+    </div>
+	<div id="Garlic Bread with Cheese-info" class="ingredient-info">
+		<h3>Garlic Bread with Cheese - Ingredients</h3>
+		<p>Italian Cheese, Italian Garlic </p>
+		</div>
+	<div id="Ulivo Wine-info" class="ingredient-info">
+		<h3>Ulivo Wine - Ingredients</h3>
+		<p>Itslian Fresh Grapes</p>
+		</div>
+	<section class="menu-category">
+		<h3>Starters</h3>
+		
+		<div class="food-card">
+		<img src="images/garlic-bread.jpg.jpeg" alt="Garlic Bread" class="food-img">
+		<div class="food-details">
+		<div class="food-header">
+		<span class="item-name">Garlic Bread with Cheese</span>
+		<span class="item-price">Rs.950</span>
+			</div>
+			<p class="item-desc">Toasted artisan bread with garlic butter and melted mozzarella.</p>
+			</div>
+		</div>
+		</section>
+		
+	<section class="menu-category">
+		<h3>Main Dishes</h3>
+		
+	<div class="food card">
+		<img src="images/pizza.jpg.jpeg" alt="Margherita Pizza" class="food-img">
+		<div class="food-details">
+		<div class="food-header">
+		<span class="item-name">Margherita Pizza</span>
+		<span class="item-name">Rs.2500</span>
+			</div>
+			<p class="item-desc">Fresh mozzarella, tomatoes, and fresh basil on a crispy crust.</p>
+		</div>
+		</div>
+		<div class="food-card">
+		<img src="images/pasta.jpg.jpeg" alt="Pasta Carbonara" class="food-img">
+			<div class="food-details">
+			<div class="food-header">
+			<span class="item-name">Spaghetti Carbonara</span>
+				<span class="item-price">Rs.1800</span>
+				</div>
+				<p class="item-desc">Traditional Italian pasta with rich cream sauce, bacon and parmesan.</p>
+			</div>
+		</div>
+		<div class="food-card">
+		<img src="images/lasagna.jpg.jpeg" alt="Cheesey Lasagna" class="food-img">
+			<div class="food-details">
+			<div class="food-header">
+			<span class="item-name">Lasagna Bolognese</span>
+				<span class="item-price">Rs.2800</span>
+				</div>
+				<p class="item-desc">Traditional Italian Lasagna.</p>
+			</div>
+		</div>
+		</section>
+		<section class="menu-category">
+			<h3>Desserts</h3>
+			<div class="food-card">
+				<img src="images/tiramisu.jpg.jpeg" alt="Tiramisu" class="food-img">
+				<div class="food-details">
+					<div class="food-header">
+						<span class="item-name">Classic Tiramisu</span>
+						<span class="item-price">Rs.1000</span>
+					</div>
+					<p class="item-desc">Traditional Italian Tiramisu.</p>
+				</div>
+			</div>
+		</section>
+		<section class="menu-category">
+			<h3>Ulivo cuisine and wine bar</h3>
+			<div class="food-card">
+				<img src="images/wine.jpg.jpeg" alt="Wine" class="food-img">
+				<div class="food-details">
+					<div class="food-header">
+						<span class="item-name">Ulivo Wine</span>
+						<span class="item-price">Rs.8900</span>
+					</div>
+					<p class="item-desc">Traditional Ulivo Wine.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy;2026 Ulivo Restaurant. All rights reserved</p>
+	</footer>
+</body>
+</html>

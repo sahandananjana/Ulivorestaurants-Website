@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Ulivo-Contact Us</title>	
+	
+<style>
+	body{
+		background-image: url(images/banner.jpeg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment:fixed;
+		margin: 0;
+		font-family: Arial, sans-serif;
+		color: white;
+	}
+	header,main{
+		background-color: rgba(0, 0, 0, 0.75);
+		padding: 25px;
+		margin: 30px auto;
+		max-width: 800px;
+		text-align: center;
+		border-radius: 8px;	
+	}
+	a{
+		color: #ffd700;
+		text-decoration: none;
+		margin: 0 10px;
+		transition: color 0.3s ease;	
+	}
+	a:hover{ 
+		text-decoration: underline;
+		color: #ffffff;
+	}
+	.active{
+		font-weight: bold;
+		border-bottom: 2px solid #ffd700;	
+	}
+	.contact-container{
+		display:flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: space-between;
+		text-align: left;
+		margin-top: 20px;
+	}
+	  .contact-info, .contact-form {
+            flex: 1;
+            min-width: 280px;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .contact-info h3, .contact-form h3 {
+            color: #ffd700;
+            margin-top: 0;
+            border-bottom: 1px solid #ffd700;
+            padding-bottom: 8px;
+        }
+
+        .contact-info p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+	.form-group label{
+		margin-bottom: 15px;
+	}
+	.form-group label{
+		display: block;
+		,margin-bottom: 5px;
+		font-size: 14px;
+		color: #ffd700;
+	}
+	  .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .submit-btn {
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+	.submit-btn:hover{
+		background-color: #e6c200;
+	}
+	footer{
+		text-align: center;
+		padding: 15px;
+		background-color: rgba(0, 0, 0, 0.85);
+		font-size: 14px;
+		margin-top: 30px;	
+	}
+	@media(max-width: 600px){
+		header, main{
+			width: 90%;
+			padding: 15px;
+			margin: 15px auto;	
+		}	
+		nav a{
+			display: inline-block;
+			margin: 5px;
+		}
+		.comtact-container{
+			flex-derection: column;
+		}
+	}
+	</style>
+</head>
+
+<body>
+		<header>
+        <h1>Ulivo Restaurant</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="menu.html">Menu</a> | 
+            <a href="contact.html" class="active">Contact Us</a>
+        </nav>
+    </header>
+		<main>
+			<h2>Get in Touch</h2>
+			<p> we'd love to hear from you! Reserve a table, ask a question, or give us feedback.</p>
+		 <div class="contact-container">
+		 <div class="contact-info">
+		   <h3>Our Details</h3>
+		   <p><strong>Address:</strong><br>Beach Road Negombo</p>
+		   <p><strong>Phone</strong><br> +94 0716068707</p>
+		   <p><strong>Email</strong><br>Ulivo@gmail.com</p>
+		   <p><strong>Opening Hours:</strong><br>Mon-Sun: 2:00 PM-11:00 PM</p>
+			 </div>
+			</div>
+			 <div class="contact-form">
+				 <h3>Send Us a Message</h3>
+				 <form action="#" method="post">
+				<div class="form-group">
+			    <label for="name">Your Name</label>
+					<input type="text" id="name" name="name" required placeholder=" Sahan dananjana">
+					   </div>
+					 <div class="form-group">
+					 <label for="email">Your Email</label>
+					 <input type="email" id="email" name="email" required placeholder="sahandhananjana76@gmail.com">
+					 </div>
+					<div class="form-group">
+    <label for="message">Message</label>
+   <textarea id="message" name="message" rows="4" required placeholder="Type your message here..."></textarea>
+</div>
+					 <button type="submit" class="submit-btn">Send Message</button>
+				 </form>
+			 </div>
+		</main>
+		<footer>
+		 <p>&copy; 2026 Ulivo Restaurant. All rights reserved.</p>
+		</footer>
+</body>
+</html>
